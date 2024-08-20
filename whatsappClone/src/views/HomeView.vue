@@ -51,7 +51,7 @@ let  open = ref(true)
       <div class="grid h-screen place-items-center">
         <div>
           <div class="flex items-center w-full justify-center">
-            <img src="../assets/images/whatsappweblogo.png" width="375" />
+            <img src="../assets/images/w-web-not-loaded-chat.png" width="375" />
           </div>
 
             <div class="text-gray-500 text-[32px] font-light mt-10">
