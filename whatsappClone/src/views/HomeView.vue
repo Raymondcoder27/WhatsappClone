@@ -37,5 +37,22 @@ import ChatsView from "./ChatsView.vue";
     </div>
 
     <ChatsView class="mt-[100px]" />
+
+    <div class="text-center bg-gray-100 fixed ml-[420px] w-[calc(100vw-420px)]">
+      <div class="grid h-screen place-items-center">
+        <div>
+          <div class="flex items-center w-full justify-center">
+            <img
+          src="../assets/images/whatsappweblogo.png"
+          width="375"
+        />
+        <div class="text-gray-500 text-[32px] font-light mt-10">
+
+        </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </template>

@@ -1,23 +1,17 @@
 <script setup>
-  import CheckAllIcon from 'vue-material-design-icons/CheckAll.vue'
+import CheckAllIcon from "vue-material-design-icons/CheckAll.vue";
 </script>
 
 <template>
   <div class="">
-   <div class="flex w-full px-4 py-3 items-center cursor-pointer">
-    <img
-          src="../assets/images/profile.jpeg"
-          class="rounded-full mr-4 w-12"
-        />
+    <div class="flex w-full px-4 py-3 items-center cursor-pointer">
+      <img src="../assets/images/profile.jpeg" class="rounded-full mr-4 w-12" />
 
-        <div class="flex justify-between items-center">
-          <div class="text-[15px] text-gray-600">
-            Frank
-          </div>
-          <div class="text-[12px] text-gray-600">
-            Date
-          </div>
-        </div>
+      <div class="w-full">
+       <div class="flex justify-between items-center">
+        <div class="text-[15px] text-gray-600">Frank</div>
+        <div class="text-[12px] text-gray-600">Date</div>
+      </div>
 
         <div class="flex items-center">
           <CheckAllIcon :size="18" class="mr-1" />
@@ -25,7 +19,11 @@
             This is a message...
           </div>
         </div>
-   </div>
+
+      </div>
+    </div>
+
+    <div class="border-b w-[calc(100%-80px)] float-right"></div>
   </div>
 </template>
 
@@ -75,7 +73,7 @@ h3 {
   }
 
   .item:before {
-    content: ' ';
+    content: " ";
     border-left: 1px solid var(--color-border);
     position: absolute;
     left: 0;
@@ -84,7 +82,7 @@ h3 {
   }
 
   .item:after {
-    content: ' ';
+    content: " ";
     border-left: 1px solid var(--color-border);
     position: absolute;
     left: 0;
