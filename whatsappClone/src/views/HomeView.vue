@@ -4,9 +4,12 @@ import DotsVerticalIcon from "vue-material-design-icons/DotsVertical.vue";
 import MagnifyIcon from "vue-material-design-icons/Magnify.vue";
 import ChatsView from "./ChatsView.vue";
 import MessageView from "./MessageView.vue";
+import FindFriendsView from "./FindFriendsView.vue";
+
 import { ref } from "vue";
 
-let  open = ref(true)
+let open = ref(true);
+let showFindFriends = ref(true);
 </script>
 
 <template>
@@ -40,37 +43,45 @@ let  open = ref(true)
       </div>
     </div>
 
-    <ChatsView class="mt-[100px]" />
+    <div v-if="showFindFriends">
+      <ChatsView class="mt-[100px]" />
+    </div>
+    <div v-else>
+      <FindFriendsView class="pt-28" />
+    </div>
 
     <div class="" v-if="open">
       <MessageView />
     </div>
 
     <div class="" v-else>
-      <div class="text-center bg-gray-100 fixed ml-[420px] w-[calc(100vw-420px)]">
-      <div class="grid h-screen place-items-center">
-        <div>
-          <div class="flex items-center w-full justify-center">
-            <img src="../assets/images/w-web-not-loaded-chat.png" width="375" />
-          </div>
+      <div
+        class="text-center bg-gray-100 fixed ml-[420px] w-[calc(100vw-420px)]"
+      >
+        <div class="grid h-screen place-items-center">
+          <div>
+            <div class="flex items-center w-full justify-center">
+              <img
+                src="../assets/images/w-web-not-loaded-chat.png"
+                width="375"
+              />
+            </div>
 
             <div class="text-gray-500 text-[32px] font-light mt-10">
               Whatsapp Web
-            <div class="text-gray-600 text-[14px] mt-2">
-              <div>
-                Send and receive messages without keeping your phone online.
-              </div>
-              <div>
-                Use Whatsapp on up to 4 linked devices and 1 phone at the same
-                time.
+              <div class="text-gray-600 text-[14px] mt-2">
+                <div>
+                  Send and receive messages without keeping your phone online.
+                </div>
+                <div>
+                  Use Whatsapp on up to 4 linked devices and 1 phone at the same
+                  time.
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
-
-    
   </div>
 </template>
