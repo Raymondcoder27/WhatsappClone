@@ -1,14 +1,31 @@
+<script setup>
+  import CheckAllIcon from 'vue-material-design-icons/CheckAll.vue'
+</script>
+
 <template>
-  <div class="item">
-    <i>
-      <slot name="icon"></slot>
-    </i>
-    <div class="details">
-      <h3>
-        <slot name="heading"></slot>
-      </h3>
-      <slot></slot>
-    </div>
+  <div class="">
+   <div class="flex w-full px-4 py-3 items-center cursor-pointer">
+    <img
+          src="../assets/images/profile.jpeg"
+          class="rounded-full mr-4 w-12"
+        />
+
+        <div class="flex justify-between items-center">
+          <div class="text-[15px] text-gray-600">
+            Frank
+          </div>
+          <div class="text-[12px] text-gray-600">
+            Date
+          </div>
+        </div>
+
+        <div class="flex items-center">
+          <CheckAllIcon :size="18" class="mr-1" />
+          <div class="text-[15px] flex justify-between text-gray-500 w-full">
+            This is a message...
+          </div>
+        </div>
+   </div>
   </div>
 </template>
 

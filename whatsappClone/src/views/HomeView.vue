@@ -2,6 +2,7 @@
 import AccountGroupIcon from "vue-material-design-icons/AccountGroup.vue";
 import DotsVerticalIcon from "vue-material-design-icons/DotsVertical.vue";
 import MagnifyIcon from "vue-material-design-icons/Magnify.vue";
+import ChatsView from "./ChatsView.vue";
 </script>
 
 <template>
@@ -22,17 +23,19 @@ import MagnifyIcon from "vue-material-design-icons/Magnify.vue";
 
       <div id="Search" class="bg-white w-full px-2 border-b shadow-sm">
         <div
-          class="px-1 m-2 flex-items-center justify-center rounded-md bg-[#F0F0F0]"
+          class="px-1 m-2 flex items-center justify-center rounded-md bg-[#F0F0F0]"
         >
           <MagnifyIcon fillColor="#515151" :size="18" class="ml-2" />
           <input
             type="text"
-            class="ml-2 appearance-none w-full bg- py-1.5 px-2.5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder:text-sm placeholder:text-gray-500 bg-[#F0F0F0]"
+            class="ml-2 appearance-none w-full py-1.5 px-2.5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder:text-sm placeholder:text-gray-500 bg-[#F0F0F0]"
             autocomplete="off"
             placeholder="Start a new chat"
           />
         </div>
       </div>
     </div>
+
+    <ChatsView class="mt-[100px]" />
   </div>
 </template>
