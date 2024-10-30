@@ -8,10 +8,10 @@ import CheckAllIcon from "vue-material-design-icons/CheckAll.vue";
       <img src="../assets/images/profile.jpeg" class="rounded-full mr-4 w-12" />
 
       <div class="w-full">
-       <div class="flex justify-between items-center">
-        <div class="text-[15px] text-gray-600">Frank</div>
-        <div class="text-[12px] text-gray-600">Date</div>
-      </div>
+        <div class="flex justify-between items-center">
+          <div class="text-[15px] text-gray-600">Frank</div>
+          <div class="text-[12px] text-gray-600">Date</div>
+        </div>
 
         <div class="flex items-center">
           <CheckAllIcon :size="18" class="mr-1" />
@@ -19,7 +19,6 @@ import CheckAllIcon from "vue-material-design-icons/CheckAll.vue";
             This is a message...
           </div>
         </div>
-
       </div>
     </div>
 
