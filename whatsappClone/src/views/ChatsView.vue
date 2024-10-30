@@ -1,8 +1,11 @@
 <script setup>
-  import MessageRowComponent from '@/components/MessageRowComponent.vue';
+import MessageRowComponent from "@/components/MessageRowComponent.vue";
 </script>
 <template>
-  <div id="Messages" class="z-0 overflow-auto pt-1 fixed h-[calc(100vh-100px)] w-[420px]">
+  <div
+    id="Messages"
+    class="z-0 overflow-auto pt-1 fixed h-[calc(100vh-100px)] w-[420px]"
+  >
     <MessageRowComponent />
   </div>
 </template>
